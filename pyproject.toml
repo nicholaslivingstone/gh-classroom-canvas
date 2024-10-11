@@ -1,0 +1,21 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghcr-canvas"
+version = "0.1.0"
+description = "A Set of Utility Programs for Using GitHub Classroom and Canvas."
+readme = "README.md"
+authors = [{ name = "Nicholas Livingstone", email = "nicholaselmolivingstone@gmail.com" }]
+dependencies = [
+    "pandas"
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+
+
+[project.scripts]
+ghcr-canvas = "ghcr_canvas.cli:main"
